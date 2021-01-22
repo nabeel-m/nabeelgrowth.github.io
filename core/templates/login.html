@@ -1,0 +1,130 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GROWTH PLUG</title>
+	
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #00b8e6;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: whitesmoke;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: whitesmoke;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+</style>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>GROWTH PLUG</h2>
+        <ul>
+            <li><a href="{% url 'social:begin' 'facebook' %}"><i class="fas fa-home"></i>Dashboard</a></li>
+            <li><a href="{% url 'website' %}"><i class="fas fa-user"></i>Website</a></li>
+            <li><a href="#"><i class="fas fa-mouse"></i>visitors</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>Reviews</a></li>
+            <li><a href="#"><i class="fas fa-list"></i>Listings</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>Appoinement</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+        </ul> 
+        
+
+
+</body>
+</html>
